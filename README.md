@@ -1,2 +1,11 @@
 # ini-fileparser
-Simple INI file parser.
+IniFileParser is a simple INI file parser.
+
+## Usage
+```
+try {
+    $array = IniFileParser::getSingleton()->parseIniFile(filename: $filename);
+} catch (IniFileParserException $e) {
+    // Error handling.
+}
+```
